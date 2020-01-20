@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jf.star.pet.house</groupId>
+  <artifactId>star_pet_house</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+
+  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <java.version>1.7</java.version>
+      <dubbo.version>2.5.3</dubbo.version>
+      <zkclient.version>0.2</zkclient.version>
+      <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+  </properties>
+
+	<parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>2.1.2.RELEASE</version>
+      <relativePath/> <!-- lookup parent from repository -->
+   </parent>
+
+  <modules>
+    <module>star_pet_house_api</module>
+    <module>star_pet_house_provider</module>
+    <module>star_pet_house_service</module>
+    <module>star_pet_house_commons</module>
+  </modules>
+
+  	<dependencyManagement>
+        <dependencies>
+
+        	<dependency>
+		      <groupId>com.cairh.wechat</groupId>
+		      <artifactId>xpe-products-wechat-commons</artifactId>
+		      <version>0.0.1-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>com.cairh.wechat</groupId>
+		      <artifactId>xpe-products-wechat-service</artifactId>
+		      <version>0.0.1-SNAPSHOT</version>
+		    </dependency>
+		    <dependency>
+			    <groupId>org.mybatis.spring.boot</groupId>
+			    <artifactId>mybatis-spring-boot-starter</artifactId>
+			    <version>2.1.0</version>
+			</dependency>
+			<dependency>
+		        <groupId>com.oracle</groupId>
+			    <artifactId>ojdbc6</artifactId>
+			    <version>11.2.0.3</version>
+		    </dependency>
+		    <dependency>
+		        <groupId>com.alibaba</groupId>
+		        <artifactId>druid</artifactId>
+		        <version>1.0.20</version>
+		    </dependency>
+		    <dependency>
+		        <groupId>com.alibaba.boot</groupId>
+		        <artifactId>dubbo-spring-boot-starter</artifactId>
+		        <version>0.2.0</version>
+		    </dependency>
+		    <dependency>
+			   <groupId>org.springframework.boot</groupId>
+			   <artifactId>spring-boot-starter-log4j2</artifactId>
+			   <version>1.5.8.RELEASE</version>
+			</dependency>
+		    <dependency>
+		        <groupId>com.alibaba</groupId>
+		        <artifactId>fastjson</artifactId>
+		        <version>1.2.44</version>
+		    </dependency>
+		    <dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.3.2</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.github.pagehelper</groupId>
+			    <artifactId>pagehelper-spring-boot-starter</artifactId>
+			    <version>1.2.12</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba.boot</groupId>
+				<artifactId>nacos-config-spring-boot-starter</artifactId>
+				<version>0.2.1</version>
+				<exclusions>
+			        <exclusion>
+			            <groupId>ch.qos.logback</groupId>
+			            <artifactId>logback-core</artifactId>
+			        </exclusion>
+			        <exclusion>
+			            <groupId>ch.qos.logback</groupId>
+			            <artifactId>logback-classic</artifactId>
+			        </exclusion>
+			    </exclusions>
+			</dependency>
+			<dependency>
+		        <groupId>com.alibaba</groupId>
+		        <artifactId>dubbo-registry-nacos</artifactId>
+		        <version>0.0.1</version>
+		    </dependency>
+		    
+		    <dependency>
+		    	<groupId>org.springframework.boot</groupId>
+		    	<artifactId>spring-boot-starter-data-redis</artifactId>
+		    	<version>2.1.5.RELEASE</version>
+		    </dependency>
+		    <dependency>
+			    <groupId>org.redisson</groupId>
+			    <artifactId>redisson</artifactId>
+			    <version>3.5.0</version>
+			</dependency>
+			<dependency>
+		        <groupId>org.projectlombok</groupId>
+		        <artifactId>lombok</artifactId>
+		        <version>1.18.8</version>
+		    </dependency>
+        </dependencies>
+ 	</dependencyManagement>
+
+</project>
