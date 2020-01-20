@@ -77,16 +77,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-        <!--     <dependency> -->
-        <!--       <groupId>org.springframework</groupId> -->
-        <!--       <artifactId>springloaded</artifactId> -->
-        <!--       <version>1.2.5.RELEASE</version> -->
-        <!--     </dependency> -->
-        <!--     <dependency> -->
-        <!-- 	  <groupId>org.springframework.boot</groupId> -->
-        <!-- 	  <artifactId>spring-boot-devtools</artifactId> -->
-        <!-- 	  <optional>true</optional>  -->
-        <!-- 	</dependency> -->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
