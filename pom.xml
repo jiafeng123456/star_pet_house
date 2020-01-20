@@ -32,17 +32,6 @@
 
   	<dependencyManagement>
         <dependencies>
-
-        	<dependency>
-		      <groupId>com.cairh.wechat</groupId>
-		      <artifactId>xpe-products-wechat-commons</artifactId>
-		      <version>0.0.1-SNAPSHOT</version>
-		    </dependency>
-		    <dependency>
-		      <groupId>com.cairh.wechat</groupId>
-		      <artifactId>xpe-products-wechat-service</artifactId>
-		      <version>0.0.1-SNAPSHOT</version>
-		    </dependency>
 		    <dependency>
 			    <groupId>org.mybatis.spring.boot</groupId>
 			    <artifactId>mybatis-spring-boot-starter</artifactId>
