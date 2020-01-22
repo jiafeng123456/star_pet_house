@@ -103,11 +103,7 @@
 			    <artifactId>redisson</artifactId>
 			    <version>3.5.0</version>
 			</dependency>
-			<dependency>
-		        <groupId>org.projectlombok</groupId>
-		        <artifactId>lombok</artifactId>
-		        <version>1.18.8</version>
-		    </dependency>
+
         </dependencies>
  	</dependencyManagement>
 

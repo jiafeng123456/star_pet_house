@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 @Controller
 public class TestController {
 
-    @Reference
+    @Reference()
     private TestServices testServices;
 
     @ResponseBody
