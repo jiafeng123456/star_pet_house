@@ -28,6 +28,7 @@
     <module>star_pet_house_provider</module>
     <module>star_pet_house_service</module>
     <module>star_pet_house_commons</module>
+	<module>star_pet_house_shiro</module>
   </modules>
 
   	<dependencyManagement>
@@ -103,7 +104,6 @@
 			    <artifactId>redisson</artifactId>
 			    <version>3.5.0</version>
 			</dependency>
-
         </dependencies>
  	</dependencyManagement>
 

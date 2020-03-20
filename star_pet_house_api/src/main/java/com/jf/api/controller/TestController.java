@@ -1,13 +1,14 @@
 package com.jf.api.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.star_pet_house_service.services.TestServices;
+import org.star_pet_house_commons.model.User;
 
-import javax.annotation.Resource;
+import java.util.Map;
 
 /*
  *@description:
@@ -15,15 +16,15 @@ import javax.annotation.Resource;
  *@date 2020/1/20 0020 13:23
  */
 @Controller
-public class TestController {
+public class TestController{
 
     @Reference()
     private TestServices testServices;
 
     @ResponseBody
-    @RequestMapping("/hello")
-    public String sayHello(){
-        System.out.println("---------------");
-        return testServices.sayHello("jf");
+    @CrossOrigin
+    @RequestMapping(value = "/hello")
+    public Map<String,Object> sayHello(String page_num){
+        return testServices.sayHello(page_num);
     }
 }
