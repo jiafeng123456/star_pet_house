@@ -1,11 +1,15 @@
 package com.jf.api.controller.UploadImage;
 
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.jf.api.utils.OOSClientUtil;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,10 +21,19 @@ import java.util.Map;
 @RestController
 public class UploadImageController {
 
-    @RequestMapping("/uploadImage")
+    // 允许上传的格式
+    private static final String[] IMAGE_TYPE = new String[]{".bmp", ".jpg", ".jpeg", ".gif", ".png"};
+
     @CrossOrigin
-    public Map<String,Object> uploadImage(@RequestPart("image")MultipartFile imageFile){
+    @RequestMapping("/uploadImage")
+    public Map<String,Object> upload(MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws IOException {
         Map<String,Object> map = new HashMap<>();
+        Map<String,Object> result = new HashMap<>();
+        String imageUrl = OOSClientUtil.uploadImg(file);
+        result.put("src",imageUrl);
+        map.put("code","0");
+        map.put("msg","success");
+        map.put("data",result);
         return map;
     }
 }
