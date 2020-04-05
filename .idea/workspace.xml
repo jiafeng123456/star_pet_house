@@ -2,22 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243766cf-e787-42cc-b561-65e66966407f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/constants/OperationFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/CommonResultCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/GengerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/PetStoreStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/RoleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/MysqlSqlProviderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/SysDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/UserInfoDesensitizeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/PetStoreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogLoginMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogWalletMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/PetStoreMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/WalletMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IPetStoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/error/EmBusinessError.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/error/EmBusinessError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/AllCityInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/AllCityInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogComplain.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogComplain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogWallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogWallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetFund.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetFund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysPermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysPermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRolePermission.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRolePermission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/BaseServicesImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/m2e-wtp/web-resources/META-INF/maven/com.jf.star.pet.house/star_pet_house_provider/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/m2e-wtp/web-resources/META-INF/maven/com.jf.star.pet.house/star_pet_house_provider/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IBaseServices.java" beforeDir="false" />
     </list>
     <list id="aeeeb161-b306-4cd3-8cac-d9c5e79c7caf" name="不需要提交" comment="1">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_20.xml" afterDir="false" />
@@ -25,12 +73,11 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_3_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_34.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_commons/target/classes/org/star_pet_house_commons/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/target/classes/org/star_pet_house_commons/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_commons/target/test-classes/org/star_pet_house_commons/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/target/test-classes/org/star_pet_house_commons/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/ProviderApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/impl/TestServicesImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/ProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/ProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/impl/TestServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/impl/TestServicesImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/star_pet_house_service/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,12 +110,16 @@
     <session id="627851124">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.101" value="1" />
+          <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.111" value="1" />
+          <entry key="project.open.time.114" value="1" />
           <entry key="project.open.time.116" value="1" />
+          <entry key="project.open.time.120" value="1" />
+          <entry key="project.open.time.125" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.156" value="1" />
+          <entry key="project.open.time.156" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -78,95 +129,148 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.93" value="1" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="17" />
-          <entry key="JAVA" value="89" />
+          <entry key="CLASS" value="26" />
+          <entry key="JAVA" value="204" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="16" />
-          <entry key="XML" value="43" />
+          <entry key="Properties" value="20" />
+          <entry key="XML" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2187" />
-          <entry key="PLAIN_TEXT" value="111" />
-          <entry key="Properties" value="165" />
-          <entry key="XML" value="299" />
+          <entry key="JAVA" value="7419" />
+          <entry key="PLAIN_TEXT" value="114" />
+          <entry key="Properties" value="172" />
+          <entry key="XML" value="313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.checkout.remote" value="1" />
+          <entry key="git.branch.checkout.remote" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="star_pet_house" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/pom.xml">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
+            <state relative-caret-position="122">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="12" column="57" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="57" />
+            <state relative-caret-position="172">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_api/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/CommonReturnType.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/PetStoreServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1710">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -178,6 +282,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -185,57 +290,64 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dubbo-springboot-pet-v1" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/ApiApplication.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/User.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserProvider.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/ProviderApplication.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/star_pet_house_shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/MyShiroRealm.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/MySessionManager.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/error/CommonError.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/CommonReturnType.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/BaseServices.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/BaseServicesImpl.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IBaseServices.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Interceptor/WebInterceptor.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/WebUtils.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Filter/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/resources/web.xml" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Filter/AccessFilter.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/TestServices.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/TestServicesImpl.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PicUploadResult.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/AliyunConfig.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/OSSClientConstants.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/MultipartFileChild.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/image/UploadImageServicesImpl.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/image/IUploadImageServices.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/COSClientUtil.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/AliyunOSSClientUtil.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/main.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/Book.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/pom.xml" />
-        <option value="$PROJECT_DIR$/star_pet_house_api/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/pom.xml" />
         <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/pom.xml" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/SysUserMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/UserStatus.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/MD5Util.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/SysUserRoleMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/RoleType.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/WalletMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletType.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogLoginMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogWalletMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/GengerType.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletStatus.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/login/UserController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserProvider.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImageController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/PetStoreMapper.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/PetStoreStatus.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/CommonResultCode.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/error/EmBusinessError.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IPetStoreService.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/AllCityInfo.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogApplication.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/PetStoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogComplain.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogLogin.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogWallet.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetAdvice.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetFund.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetItem.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetOrder.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetStore.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysPermission.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRole.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRolePermission.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUser.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -254,29 +366,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -453,6 +543,126 @@
             <path>
               <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
               <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
+              <item name="response" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
               <item name="star_pet_house_provider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -485,6 +695,79 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="provider" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="provider" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star_pet_house" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star_pet_house" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="star_pet_house_service" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -499,7 +782,7 @@
     <property name="SearchEverywhereHistoryKey" value="ApplicationPart&#9;PSI&#9;JAVA://org.apache.catalina.core.ApplicationPart" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585564851941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1586098193706" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SSMP" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -512,12 +795,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.star_pet_house_commons" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.star_pet_house_commons.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_api\src\main\java\com\jf\api\controller" />
       <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_commons\src\main\java\org\star_pet_house_commons\response" />
       <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_api\src\main\java\com\jf\api" />
       <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_commons\src\main\java\org\star_pet_house_commons" />
       <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_shiro\src\main\resources" />
-      <recent name="G:\workspace\GraduationProject\star_pet_house\star_pet_house_api\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -532,7 +818,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.mybatis-generator">
+  <component name="RunManager" selected="Spring Boot.ApiApplication">
+    <configuration name="ExcelUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utils.ExcelUtil" />
+      <module name="star_pet_house_commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.star_pet_house_commons.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utils.MD5Util" />
+      <module name="star_pet_house_commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.star_pet_house_commons.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utils.main" />
       <module name="star_pet_house_commons" />
@@ -592,9 +904,13 @@
       <item itemvalue="Spring Boot.ProviderApplication" />
       <item itemvalue="Spring Boot.ApiApplication" />
       <item itemvalue="Application.main" />
+      <item itemvalue="Application.MD5Util" />
+      <item itemvalue="Application.ExcelUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExcelUtil" />
+        <item itemvalue="Application.MD5Util" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -625,7 +941,14 @@
       <workItem from="1585097202647" duration="2094000" />
       <workItem from="1585184440614" duration="10167000" />
       <workItem from="1585269966397" duration="5971000" />
-      <workItem from="1585529864149" duration="7424000" />
+      <workItem from="1585529864149" duration="7964000" />
+      <workItem from="1585616066350" duration="5961000" />
+      <workItem from="1585702533273" duration="803000" />
+      <workItem from="1585788268716" duration="4815000" />
+      <workItem from="1585875420789" duration="456000" />
+      <workItem from="1585974472872" duration="5152000" />
+      <workItem from="1585987891525" duration="17716000" />
+      <workItem from="1586079431800" duration="14960000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1579505167289</created>
@@ -655,28 +978,69 @@
       <option name="project" value="LOCAL" />
       <updated>1584697508718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="通过mybatis连接数据库成功">
+      <created>1585564930718</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585564930718</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85215000" />
+    <option name="totallyTimeSpent" value="135618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25869894" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984985" visible="true" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.5015015" side_tool="true" weight="0.22692889" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4722222" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13584287" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28150573" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47135842" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18003273" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6248109" visible="true" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3751891" side_tool="true" weight="0.68085104" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289689" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.15582451" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984985" visible="true" weight="0.23373677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5015015" side_tool="true" weight="0.22692889" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.47135842" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18003273" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.16366611" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -693,12 +1057,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.15128593" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.15582451" />
       <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -716,46 +1080,46 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java</url>
+          <line>103</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/PetStoreServiceImpl.java</url>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java</url>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java</url>
+          <line>100</line>
           <properties />
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java</url>
+          <line>162</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java</url>
-          <line>43</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java</url>
+          <line>141</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/main.java</url>
-          <line>10</line>
+          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java</url>
+          <line>44</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -764,277 +1128,435 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/BaseServicesImpl.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogWalletMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="190">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="42" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IBaseServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Interceptor.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Interceptor/WebInterceptor.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/WebUtils.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14.jar!/javax/servlet/Filter.class">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/GengerType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
+        <state relative-caret-position="399">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Filter/CorsFilter.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/resources/web.xml" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/CorsConfig.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/BaseController.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/Config.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/Filter/AccessFilter.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/RoleType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="257">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/TestServicesImpl.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/WalletStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        <state relative-caret-position="209">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/User.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/PetStoreStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="28" />
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/constants/OperationFields.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/CommonResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/BaseServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/CommonReturnType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/error/EmBusinessError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/config/spring/beans/factory/annotation/ReferenceAnnotationBeanPostProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="99">
           <caret line="164" selection-start-line="164" selection-end-line="164" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        <state relative-caret-position="158">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/TestServices.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.1.4.RELEASE/spring-webmvc-5.1.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="93">
+          <caret line="574" selection-start-line="574" selection-end-line="574" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PicUploadResult.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.14/tomcat-embed-core-9.0.14.jar!/org/apache/catalina/core/ApplicationPart.class">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.1.4.RELEASE/spring-webmvc-5.1.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="93">
+          <caret line="514" selection-start-line="514" selection-end-line="514" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/aliyun/oss/aliyun-sdk-oss/3.4.2/aliyun-sdk-oss-3.4.2.jar!/com/aliyun/oss/OSSClient.class">
+    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/dubbo/2.6.5/dubbo-2.6.5.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="180" column="36" lean-forward="true" selection-start-line="180" selection-start-column="36" selection-end-line="180" selection-end-column="36" />
+        <state relative-caret-position="84">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/AliyunConfig.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IPetStoreService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/MultipartFileChild.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/com/aliyun/oss/aliyun-sdk-oss/3.8.0/aliyun-sdk-oss-3.8.0.jar!/com/aliyun/oss/OSSClientBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/multipart/support/StandardMultipartHttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="214" selection-start-line="214" selection-end-line="214" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/aliyun/oss/aliyun-sdk-oss/3.8.0/aliyun-sdk-oss-3.8.0.jar!/com/aliyun/oss/OSS.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1885">
-          <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/config/OSSClientConstants.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/AliyunOSSClientUtil.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/image/IUploadImageServices.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/PetStoreMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/image/UploadImageServicesImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="190">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImage/UploadImageController.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus-core/3.2.0/mybatis-plus-core-3.2.0.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="-433">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/AllCityInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/response/CommonReturnType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="57" />
+        <state relative-caret-position="151">
+          <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/pom.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="274">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/main.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogComplain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="323">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/resources/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="350">
+          <caret line="77" column="1" lean-forward="true" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogWallet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="107" column="27" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
+        <state relative-caret-position="1653">
+          <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/pom.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetAdvice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/model/LogLogin.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetFund.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3916">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="236">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/model/PetItem.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3116">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/resources/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+        <state relative-caret-position="255">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="118" column="1" lean-forward="true" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysPermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRolePermission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/PetStoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,7 +1612,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>star_pet_house_commons</last-edited>
+          <last-edited>star_pet_house_shiro</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

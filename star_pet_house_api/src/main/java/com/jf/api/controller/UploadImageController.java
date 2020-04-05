@@ -1,4 +1,4 @@
-package com.jf.api.controller.UploadImage;
+package com.jf.api.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.jf.api.utils.OOSClientUtil;
@@ -19,10 +19,8 @@ import java.util.Map;
  *@date 2020/3/20 0020 14:39
  */
 @RestController
+@RequestMapping("upload")
 public class UploadImageController {
-
-    // 允许上传的格式
-    private static final String[] IMAGE_TYPE = new String[]{".bmp", ".jpg", ".jpeg", ".gif", ".png"};
 
     @CrossOrigin
     @RequestMapping("/uploadImage")
