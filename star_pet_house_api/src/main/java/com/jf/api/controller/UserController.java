@@ -40,13 +40,13 @@ public class UserController{
     }
 
     @ApiOperation("修改用户信息")
-    @RequestMapping("/modify_userInfo")
+    @RequestMapping("/modifyUserInfo")
     public Map<String, Object> modifyUserInfo(UserInfo userInfo){
         return userService.modifyUserInfo(userInfo);
     }
 
     @ApiOperation("用户菜单")
-    @RequestMapping("/get_user_menu")
+    @RequestMapping("/getUserMenu")
     public Map<String, Object> getUserMenu(String user_id){
         return userService.getUserMenu(user_id);
     }

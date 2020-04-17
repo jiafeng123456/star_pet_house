@@ -8,21 +8,17 @@ import java.util.Map;
 /*
  *@description:
  *@author jiafeng
- *@date 2020/4/4 0004 21:24
+ *@date 2020/4/13 0013 18:49
  */
-public enum WalletType {
-    ADMIN_WALLET("1", "公共钱包"),
-
-    NORMAL_WALLET("2", "用户钱包"),
-
-    MERCHANT_WALLET("3", "商家钱包"),
-
-    ;
+public enum PetSaleTypeEnum {
+    PET_ITEM_SALE("0", "宠物出售"),
+    PET_ITEM_SEND("1", "宠物赠送"),
+            ;
 
     private final String code;
     private final String name;
 
-    WalletType(String code, String name) {
+    PetSaleTypeEnum(String code, String name) {
         this.code = code;
         this.name = name;
     }
@@ -37,7 +33,7 @@ public enum WalletType {
 
     public static String getNameByCode(String code) {
         String key = "";
-        WalletType[] enumArr = WalletType.values();
+        PetSaleTypeEnum[] enumArr = PetSaleTypeEnum.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
                 key = enumArr[i].name();
@@ -49,10 +45,10 @@ public enum WalletType {
 
     public static List<Map<String, Object>> getEnumsList(){
         List<Map<String, Object>> cpCodeStatusList = new ArrayList<>();
-        for (WalletType walletType : WalletType.values()){
+        for (PetSaleTypeEnum petStatusEnum : PetSaleTypeEnum.values()){
             Map<String, Object> map = new HashMap<>();
-            map.put("option", walletType.getName());
-            map.put("value", walletType.getCode());
+            map.put("option", petStatusEnum.getName());
+            map.put("value", petStatusEnum.getCode());
             cpCodeStatusList.add(map);
         }
         return cpCodeStatusList;

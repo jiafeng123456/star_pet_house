@@ -1,5 +1,10 @@
 package org.star_pet_house_commons.enums;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /*
  *@description:
  *@author jiafeng
@@ -33,7 +38,7 @@ public enum WalletStatus {
 
     public static String getNameByCode(String code) {
         String key = "";
-        UserStatus[] enumArr = UserStatus.values();
+        WalletStatus[] enumArr = WalletStatus.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
                 key = enumArr[i].name();
@@ -41,5 +46,16 @@ public enum WalletStatus {
             }
         }
         return key;
+    }
+
+    public static List<Map<String, Object>> getEnumsList(){
+        List<Map<String, Object>> cpCodeStatusList = new ArrayList<>();
+        for (WalletStatus walletStatus : WalletStatus.values()){
+            Map<String, Object> map = new HashMap<>();
+            map.put("option", walletStatus.getName());
+            map.put("value", walletStatus.getCode());
+            cpCodeStatusList.add(map);
+        }
+        return cpCodeStatusList;
     }
 }

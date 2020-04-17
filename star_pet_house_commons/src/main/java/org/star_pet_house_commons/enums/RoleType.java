@@ -1,5 +1,10 @@
 package org.star_pet_house_commons.enums;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /*
  *@description:
  *@author jiafeng
@@ -32,7 +37,7 @@ public enum RoleType {
 
     public static String getNameByCode(String code) {
         String key = "";
-        UserStatus[] enumArr = UserStatus.values();
+        RoleType[] enumArr = RoleType.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
                 key = enumArr[i].name();
@@ -40,5 +45,16 @@ public enum RoleType {
             }
         }
         return key;
+    }
+
+    public static List<Map<String, Object>> getEnumsList(){
+        List<Map<String, Object>> cpCodeStatusList = new ArrayList<>();
+        for (RoleType roleType : RoleType.values()){
+            Map<String, Object> map = new HashMap<>();
+            map.put("option", roleType.getName());
+            map.put("value", roleType.getCode());
+            cpCodeStatusList.add(map);
+        }
+        return cpCodeStatusList;
     }
 }

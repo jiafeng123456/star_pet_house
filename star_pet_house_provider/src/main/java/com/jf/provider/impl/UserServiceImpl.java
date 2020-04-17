@@ -4,8 +4,10 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jf.provider.mapper.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.star_pet_house_commons.constants.OperationFields;
 import org.star_pet_house_commons.enums.*;
 import org.star_pet_house_commons.model.*;
+import org.star_pet_house_commons.model.response.PermissionEnumVO;
 import org.star_pet_house_commons.utils.MD5Util;
 import org.star_pet_house_service.services.IUserService;
 
@@ -13,6 +15,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static org.star_pet_house_commons.constants.OperationFields.*;
@@ -23,7 +26,7 @@ import static org.star_pet_house_commons.constants.OperationFields.*;
  *@date 2020/3/31 0031 17:11
  */
 @Service
-public class UserServiceImpl implements IUserService {
+public class UserServiceImpl extends BaseServiceImpl implements IUserService {
 
     @Autowired
     private UserInfoMapper userInfoMapper;
@@ -37,13 +40,12 @@ public class UserServiceImpl implements IUserService {
     private LogLoginMapper logLoginMapper;
     @Autowired
     private LogWalletMapper logWalletMapper;
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
     public Map<String, Object> userRegister(String userName, String password) {
-        Map<String, Object> result = new HashMap<>();
-        result.put(SUCCESS, true);
-        result.put(ERROR_NO, CommonResultCode.SUCCESS.getCode());
-        result.put(ERROR_INFO, CommonResultCode.SUCCESS.getDesc());
+        Map<String, Object> result = super.getSuccessResultMap();
 
         QueryWrapper queryWrapper = new QueryWrapper<SysUser>();
         queryWrapper.eq("user_name", userName);
@@ -98,10 +100,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public Map<String, Object> userLogin(String userName, String password) throws UnknownHostException {
-        Map<String, Object> result = new HashMap<>();
-        result.put(SUCCESS, true);
-        result.put(ERROR_NO, CommonResultCode.SUCCESS.getCode());
-        result.put(ERROR_INFO, CommonResultCode.SUCCESS.getDesc());
+        Map<String, Object> result = super.getSuccessResultMap();
 
         QueryWrapper queryWrapper = new QueryWrapper();
         queryWrapper.eq("user_name",userName);
@@ -138,10 +137,7 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public Map<String, Object> modifyUserInfo(UserInfo userInfo) {
-        Map<String, Object> result = new HashMap<>();
-        result.put(SUCCESS, true);
-        result.put(ERROR_NO, CommonResultCode.SUCCESS.getCode());
-        result.put(ERROR_INFO, CommonResultCode.SUCCESS.getDesc());
+        Map<String, Object> result = super.getSuccessResultMap();
         QueryWrapper queryWrapper = new QueryWrapper();
         queryWrapper.eq("user_id",userInfo.getUser_id());
         queryWrapper.eq("user_name",userInfo.getUser_name());
@@ -160,11 +156,10 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public Map<String, Object> getUserMenu(String userId) {
-        Map<String, Object> result = new HashMap<>();
-        result.put(SUCCESS, true);
-        result.put(ERROR_NO, CommonResultCode.SUCCESS.getCode());
-        result.put(ERROR_INFO, CommonResultCode.SUCCESS.getDesc());
+        Map<String, Object> result = super.getSuccessResultMap();
         //TODO 关联表查询用户权限
-        return null;
+        List<PermissionEnumVO> permissionEnumVOList = userMapper.getUserMenu(userId);
+        result.put(OperationFields.RESULT, permissionEnumVOList);
+        return result;
     }
 }

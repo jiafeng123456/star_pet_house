@@ -1,5 +1,10 @@
 package org.star_pet_house_commons.enums;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /*
  *@description:
  *@author jiafeng
@@ -40,5 +45,16 @@ public enum  UserStatus {
             }
         }
         return key;
+    }
+
+    public static List<Map<String, Object>> getEnumsList(){
+        List<Map<String, Object>> cpCodeStatusList = new ArrayList<>();
+        for (UserStatus userStatus : UserStatus.values()){
+            Map<String, Object> map = new HashMap<>();
+            map.put("option", userStatus.getName());
+            map.put("value", userStatus.getCode());
+            cpCodeStatusList.add(map);
+        }
+        return cpCodeStatusList;
     }
 }

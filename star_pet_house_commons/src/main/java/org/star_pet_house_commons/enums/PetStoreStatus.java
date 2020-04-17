@@ -1,5 +1,10 @@
 package org.star_pet_house_commons.enums;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /*
  *@description:
  *@author jiafeng
@@ -13,6 +18,9 @@ public enum PetStoreStatus {
     STORE_FREEZE("2", "店铺冻结"),
 
     STORE_REORGANIZATION("3", "店铺整顿"),
+
+    STORE_APPLICATION_FAIL("4", "申请失败"),
+
     ;
 
     private final String code;
@@ -33,7 +41,7 @@ public enum PetStoreStatus {
 
     public static String getNameByCode(String code) {
         String key = "";
-        UserStatus[] enumArr = UserStatus.values();
+        PetStoreStatus[] enumArr = PetStoreStatus.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
                 key = enumArr[i].name();
@@ -41,5 +49,16 @@ public enum PetStoreStatus {
             }
         }
         return key;
+    }
+
+    public static List<Map<String, Object>> getEnumsList(){
+        List<Map<String, Object>> cpCodeStatusList = new ArrayList<>();
+        for (PetStoreStatus petStoreStatus : PetStoreStatus.values()){
+            Map<String, Object> map = new HashMap<>();
+            map.put("option", petStoreStatus.getName());
+            map.put("value", petStoreStatus.getCode());
+            cpCodeStatusList.add(map);
+        }
+        return cpCodeStatusList;
     }
 }

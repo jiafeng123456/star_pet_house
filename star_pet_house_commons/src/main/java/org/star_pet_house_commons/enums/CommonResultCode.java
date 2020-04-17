@@ -17,6 +17,8 @@ public enum  CommonResultCode {
     //店铺相关异常码20000-20999
     STORE_HAS_EXIST("20000", "店铺已存在", "店铺已存在"),
     STORE_NOT_EXIST("20001", "店铺不存在", "店铺不存在"),
+    STORE_APPLICATION_NOT_EXIST("20002", "店铺申请不存在", "店铺申请不存在"),
+
 
     ;
 

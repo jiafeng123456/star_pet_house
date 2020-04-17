@@ -1,5 +1,6 @@
 package org.star_pet_house_service.services;
 
+import org.star_pet_house_commons.model.PetItem;
 import org.star_pet_house_commons.model.PetStore;
 
 import java.util.Map;
@@ -16,4 +17,6 @@ public interface IPetStoreService {
     public Map<String, Object> getStoreList(PetStore petStore, int page_size, int page_num);
 
     public Map<String, Object> getStorePaginator(PetStore petStore);
+
+    public Map<String, Object> petOnShelves(PetItem petItem, String op_type);
 }

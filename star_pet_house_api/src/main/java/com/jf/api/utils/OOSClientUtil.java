@@ -21,7 +21,6 @@ public class OOSClientUtil {
 
     private static String ENDPOINT = "oss-cn-hangzhou.aliyuncs.com";
     private static String ACCESSKEYID = "LTAI936pZCimM9gV" ;
-    private static String ACCESSKEYSECRET = "q100y3saqZRbvN5qRdiDHnp5cH9VmB" ;
     private static String BUCKET = "star-pet-house";
 
     public static String uploadImg(MultipartFile file) throws IOException {
