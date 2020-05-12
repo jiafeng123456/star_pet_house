@@ -19,4 +19,13 @@ public interface IPetStoreService {
     public Map<String, Object> getStorePaginator(PetStore petStore);
 
     public Map<String, Object> petOnShelves(PetItem petItem, String op_type);
+
+    public Map<String, Object> petLowShelves(String pet_id);
+
+    public Map<String, Object> getPetList(PetItem petItem, int page_size, int page_num);
+
+    public Map<String, Object> getPetPaginator(PetItem petItem);
+
+    public Map<String, Object> getStoreInfo(String user_name, String op_type);
+
 }

@@ -5,12 +5,14 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jf.provider.mapper.LogApplicationMapper;
 import com.jf.provider.mapper.PetStoreMapper;
+import com.jf.provider.mapper.SysUserRoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.star_pet_house_commons.constants.OperationFields;
 import org.star_pet_house_commons.enums.CommonResultCode;
 import org.star_pet_house_commons.enums.PetStoreStatus;
 import org.star_pet_house_commons.model.LogApplication;
 import org.star_pet_house_commons.model.PetStore;
+import org.star_pet_house_commons.model.SysUserRole;
 import org.star_pet_house_service.services.IAdminServices;
 
 import javax.xml.ws.Action;
@@ -31,6 +33,8 @@ public class AdminServicesImpl extends BaseServiceImpl implements IAdminServices
     private PetStoreMapper petStoreMapper;
     @Autowired
     private LogApplicationMapper logApplicationMapper;
+    @Autowired
+    private SysUserRoleMapper sysUserRoleMapper;
 
     @Override
     public Map<String, Object> getStoreApplicationList(PetStore petStore, int page_size, int page_num) {
@@ -70,6 +74,15 @@ public class AdminServicesImpl extends BaseServiceImpl implements IAdminServices
         if (op_type.equals("0")){
             //审批通过
             queryPetStore.setStore_status(PetStoreStatus.STORE_NORMAL.getCode());
+            QueryWrapper sysqueryWrapper = new QueryWrapper();
+            sysqueryWrapper.eq("uid", queryPetStore.getUser_id());
+            SysUserRole sysUserRole = sysUserRoleMapper.selectOne(sysqueryWrapper);
+            if (sysUserRole.getRole_id().equals(1)){
+                sysUserRole.setRole_id(4);
+            }else {
+                sysUserRole.setRole_id(3);
+            }
+            sysUserRoleMapper.updateById(sysUserRole);
             logApplication.setApplication_no("0");
             logApplication.setApplication_info("审批通过");
         }else {

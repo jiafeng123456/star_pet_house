@@ -18,5 +18,9 @@ public interface IUserService {
 
     public Map<String, Object> modifyUserInfo(UserInfo userInfo);
 
-    public Map<String, Object> getUserMenu(String userId);
+    public Map<String, Object> getUserMenu(String username);
+
+    public Map<String, Object> getUserInfo(String username);
+
+    public Map<String, Object> changeStatus(String username);
 }

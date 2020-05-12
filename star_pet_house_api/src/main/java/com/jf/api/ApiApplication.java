@@ -10,8 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDubbo(scanBasePackages = "com.jf.api")
 public class ApiApplication {
-	
-	public static void main(String[] args) {
+
+    public static void main(String[] args) {
         SpringApplication.run(ApiApplication.class, args);
         try {
             System.in.read();
@@ -19,5 +19,5 @@ public class ApiApplication {
             e.printStackTrace();
         }
     }
-    
 }
+

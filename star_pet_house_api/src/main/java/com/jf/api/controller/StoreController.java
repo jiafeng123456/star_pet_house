@@ -34,6 +34,12 @@ public class StoreController{
         return petStoreService.saveStoreApplication(petStore, op_type);
     }
 
+    @ApiOperation(value = "获取店铺信息")
+    @RequestMapping("/getStoreInfo")
+    public Map<String, Object> getStoreInfo(String user_name, String op_type){
+        return petStoreService.getStoreInfo(user_name, op_type);
+    }
+
     @ApiOperation(value = "店铺列表")
     @RequestMapping(value = "/getStoreList")
     public Map<String, Object> getStoreList(PetStore petStore,@RequestParam(defaultValue = "10") int page_size,
@@ -52,4 +58,24 @@ public class StoreController{
     public Map<String, Object> petOnShelves(PetItem petItem, String op_type){
         return petStoreService.petOnShelves(petItem, op_type);
     }
+
+    @ApiOperation(value = "宠物下架")
+    @RequestMapping(value = "petLowShelves")
+    public Map<String, Object> petLowShelves(String pet_id){
+        return petStoreService.petLowShelves(pet_id);
+    }
+
+    @ApiOperation(value = "宠物列表")
+    @RequestMapping(value = "getPetList")
+    public Map<String, Object> getPetList(PetItem petItem,@RequestParam(defaultValue = "10") int page_size,
+                                          @RequestParam(defaultValue = "0") int page_num){
+        return petStoreService.getPetList(petItem, page_size, page_num);
+    }
+
+    @ApiOperation(value = "宠物数量")
+    @RequestMapping(value = "getPetPaginator")
+    public Map<String, Object> getPetPaginator(PetItem petItem){
+        return petStoreService.getPetPaginator(petItem);
+    }
+
 }

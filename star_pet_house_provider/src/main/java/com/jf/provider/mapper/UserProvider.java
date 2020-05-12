@@ -18,6 +18,7 @@ public class UserProvider {
         if (StringUtils.isNotBlank(userId)){
             sql.append(" and uid = " + userId);
         }
+        sql.append(" order by sort_flag asc ");
         return sql.toString();
     }
 }

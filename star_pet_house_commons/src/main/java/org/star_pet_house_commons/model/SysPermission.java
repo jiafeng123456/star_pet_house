@@ -72,4 +72,6 @@ public class SysPermission {
      */
     private String url;
 
+    private int sort_flag;
+
 }

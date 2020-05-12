@@ -69,6 +69,7 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
         UserInfo userInfo = new UserInfo();
         userInfo.setUser_name(sysUserInsert.getUser_name());
         userInfo.setUser_id(sysUserInsert.getUid());
+        userInfo.setUser_image_url("../../static/img/head.jpg");
         userInfo.setStatus("0");//0未设置用户信息 修改用户信息后改为1
         userInfoMapper.insert(userInfo);
 
@@ -99,14 +100,14 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
     }
 
     @Override
-    public Map<String, Object> userLogin(String userName, String password) throws UnknownHostException {
+    public Map<String, Object> userLogin(String username, String password) throws UnknownHostException {
         Map<String, Object> result = super.getSuccessResultMap();
 
         QueryWrapper queryWrapper = new QueryWrapper();
-        queryWrapper.eq("user_name",userName);
+        queryWrapper.eq("user_name",username);
         String addr = InetAddress.getLocalHost().getHostAddress();
         LogLogin logLogin = new LogLogin();
-        logLogin.setNick_name(userName);
+        logLogin.setNick_name(username);
         logLogin.setIp_address(addr);
         SysUser sysUser = sysUserMapper.selectOne(queryWrapper);
         if (sysUser == null){
@@ -142,7 +143,7 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
         queryWrapper.eq("user_id",userInfo.getUser_id());
         queryWrapper.eq("user_name",userInfo.getUser_name());
         UserInfo userInfoQuery = userInfoMapper.selectOne(queryWrapper);
-        if (userInfo == null) {
+        if (userInfoQuery == null) {
             result.put(SUCCESS, false);
             result.put(ERROR_NO, CommonResultCode.USER_NOT_EXIST.getCode());
             result.put(ERROR_INFO, CommonResultCode.USER_NOT_EXIST.getDesc());
@@ -155,11 +156,40 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
     }
 
     @Override
-    public Map<String, Object> getUserMenu(String userId) {
+    public Map<String, Object> getUserMenu(String username) {
         Map<String, Object> result = super.getSuccessResultMap();
         //TODO 关联表查询用户权限
-        List<PermissionEnumVO> permissionEnumVOList = userMapper.getUserMenu(userId);
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("user_name",username);
+        UserInfo userInfo = userInfoMapper.selectOne(queryWrapper);
+        List<PermissionEnumVO> permissionEnumVOList = userMapper.getUserMenu(String.valueOf(userInfo.getUser_id()));
+        for (PermissionEnumVO permissionEnumVO : permissionEnumVOList){
+            permissionEnumVO.setUrl(permissionEnumVO.getUrl() + "?username=" + username);
+        }
+        result.put("image", userInfo.getUser_image_url());
+        result.put("status", userInfo.getStatus());
         result.put(OperationFields.RESULT, permissionEnumVOList);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> getUserInfo(String username) {
+        Map<String, Object> result = super.getSuccessResultMap();
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("user_name",username);
+        UserInfo sysUser = userInfoMapper.selectOne(queryWrapper);
+        result.put(OperationFields.RESULT, sysUser);
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> changeStatus(String username) {
+        Map<String, Object> result = super.getSuccessResultMap();
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("user_name",username);
+        UserInfo sysUser = userInfoMapper.selectOne(queryWrapper);
+        sysUser.setStatus("3");
+        userInfoMapper.update(sysUser, queryWrapper);
         return result;
     }
 }

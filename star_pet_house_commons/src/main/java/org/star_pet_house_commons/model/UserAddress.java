@@ -98,4 +98,6 @@ public class UserAddress {
      */
     private Date update_datetime;
 
+    private String status;
+
 }

@@ -1,5 +1,7 @@
 package org.star_pet_house_commons.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -14,6 +16,7 @@ public class PetItem {
      *
      * @mbggenerated Mon Mar 30 18:38:12 CST 2020
      */
+    @TableId(value = "pet_id", type = IdType.AUTO)
     private Integer pet_id;
 
     /**

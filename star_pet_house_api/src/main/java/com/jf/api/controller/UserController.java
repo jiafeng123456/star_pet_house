@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.star_pet_house_commons.model.UserInfo;
 import org.star_pet_house_service.services.IUserService;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.net.UnknownHostException;
 import java.util.Map;
 
@@ -45,9 +47,21 @@ public class UserController{
         return userService.modifyUserInfo(userInfo);
     }
 
+    @ApiOperation("获取用户信息")
+    @RequestMapping("/getUserInfo")
+    public Map<String, Object> getUserInfo(String username){
+        return userService.getUserInfo(username);
+    }
+
     @ApiOperation("用户菜单")
     @RequestMapping("/getUserMenu")
-    public Map<String, Object> getUserMenu(String user_id){
-        return userService.getUserMenu(user_id);
+    public Map<String, Object> getUserMenu(String username){
+        return userService.getUserMenu(username);
+    }
+
+    @ApiOperation("自行完善状态")
+    @RequestMapping("/changeStatus")
+    public Map<String, Object> changeStatus(String username){
+        return userService.changeStatus(username);
     }
 }
