@@ -45,4 +45,9 @@ public class AdminController {
         return adminServices.agreeApplication(store_id, op_type);
     }
 
+    @RequestMapping("/dealUser")
+    public Map<String, Object> dealUser(String user_id,String op_type){
+        return  adminServices.dealUser(user_id, op_type);
+    }
+
 }

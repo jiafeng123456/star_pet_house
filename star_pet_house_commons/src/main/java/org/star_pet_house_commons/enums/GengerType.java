@@ -38,7 +38,7 @@ public enum GengerType {
         GengerType[] enumArr = GengerType.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
-                key = enumArr[i].name();
+                key = enumArr[i].getName();
                 break;
             }
         }

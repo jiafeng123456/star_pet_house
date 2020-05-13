@@ -35,12 +35,12 @@ public enum  UserStatus {
         return name;
     }
 
-    public static String getNameByCode(String code) {
+    public static String getNameByCode(Integer code) {
         String key = "";
         UserStatus[] enumArr = UserStatus.values();
         for (int i = 0; i < enumArr.length; i++) {
             if(enumArr[i].getCode().equals(code)) {
-                key = enumArr[i].name();
+                key = enumArr[i].getName();
                 break;
             }
         }

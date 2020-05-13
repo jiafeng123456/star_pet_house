@@ -119,6 +119,16 @@ public class UserServiceImpl extends BaseServiceImpl implements IUserService {
             logLoginMapper.insert(logLogin);
             return result;
         }
+        if (sysUser.getStatus().equals(UserStatus.USER_FREEZE.getCode())){
+            result.put(SUCCESS, false);
+            result.put(ERROR_NO, CommonResultCode.USER_NOT_EXIST.getCode());
+            result.put(ERROR_INFO, "用户被冻结！");
+        }
+        if (sysUser.getStatus().equals(UserStatus.USER_LOGOUT.getCode())){
+            result.put(SUCCESS, false);
+            result.put(ERROR_NO, CommonResultCode.USER_NOT_EXIST.getCode());
+            result.put(ERROR_INFO, "用户被注销！");
+        }
         logLogin.setUser_id(sysUser.getUid());
         Boolean passFlag = MD5Util.verify(password, sysUser.getPassword());
         if (!passFlag){

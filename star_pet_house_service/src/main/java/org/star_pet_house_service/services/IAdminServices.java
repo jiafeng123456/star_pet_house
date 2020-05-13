@@ -17,4 +17,6 @@ public interface IAdminServices {
 
     public Map<String, Object> agreeApplication(String store_id, String op_type);
 
+    public Map<String, Object> dealUser(String user_id,String op_type);
+
 }

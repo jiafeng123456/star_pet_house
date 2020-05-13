@@ -56,7 +56,7 @@ public class PetStoreServiceImpl extends BaseServiceImpl implements IPetStoreSer
            QueryWrapper queryWrapper = new QueryWrapper();
            queryWrapper.eq("user_id", petStore.getUser_id());
            PetStore petStoreQuery = petStoreMapper.selectOne(queryWrapper);
-           if (petStoreQuery != null){
+           if (petStoreQuery != null && !petStoreQuery.getStore_status().equals(PetStoreStatus.STORE_APPLICATION_FAIL.getCode())){
                result.put(SUCCESS, false);
                result.put(ERROR_NO, CommonResultCode.STORE_HAS_APPLICATION.getCode());
                result.put(ERROR_INFO, CommonResultCode.STORE_HAS_APPLICATION.getDesc());
