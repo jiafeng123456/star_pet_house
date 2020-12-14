@@ -118,7 +118,12 @@
           <version>2.2.3.RELEASE</version>
           <scope>compile</scope>
       </dependency>
-
+      <!-- 添加redis依赖 -->
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-redis</artifactId>
+          <version>1.4.0.RELEASE</version>
+      </dependency>
   </dependencies>
 </project>
 

@@ -1,5 +1,6 @@
 package com.jf.provider.aop;
 
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -22,5 +23,10 @@ public class ProviderAsecpt {
     @Before("BrokerAspect()")
     public void doBefore() {
         System.out.println("方法开始了呀，大家系好安全带！");
+    }
+
+    @After("BrokerAspect()")
+    public void doAfter() {
+        System.out.println("方法结束了，请大家安全下车！");
     }
 }

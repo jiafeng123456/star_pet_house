@@ -28,7 +28,7 @@ public class OOSClientUtil {
         // Endpoint以杭州为例，其它Region请按实际情况填写。
         String endpoint = OOSClientUtil.ENDPOINT;
         String accessKeyId = OOSClientUtil.ACCESSKEYID;
-        String accessKeySecret = OOSClientUtil.ACCESSKEYSECRET;
+        String accessKeySecret = "";
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
         InputStream inputStream = file.getInputStream();
         String originName = file.getOriginalFilename();//上传的文件名

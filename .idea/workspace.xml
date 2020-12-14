@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="243766cf-e787-42cc-b561-65e66966407f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/leetcode/MaxSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/SecurityUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/SignTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/P.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/RedisTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/NewtonMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/ShellSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/test/demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/DemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/RedisServicesImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IRedisServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/star_pet_house_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/star_pet_house_api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_commons/star_pet_house_commons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/star_pet_house_commons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/star_pet_house_provider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/star_pet_house_provider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/ProviderApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/ProviderApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/impl/TestServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_provider/target/classes/com/jf/provider/impl/TestServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/star_pet_house_service/star_pet_house_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_service/star_pet_house_service.iml" afterDir="false" />
     </list>
     <list id="aeeeb161-b306-4cd3-8cac-d9c5e79c7caf" name="不需要提交" comment="1">
       <change beforePath="$PROJECT_DIR$/star_pet_house_commons/target/classes/org/star_pet_house_commons/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/star_pet_house_commons/target/classes/org/star_pet_house_commons/App.class" afterDir="false" />
@@ -65,50 +76,54 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.46" value="2" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.53" value="2" />
+          <entry key="project.open.time.53" value="3" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="2" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.open.time.62" value="2" />
+          <entry key="project.open.time.62" value="3" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.65" value="2" />
-          <entry key="project.open.time.67" value="1" />
+          <entry key="project.open.time.66" value="2" />
+          <entry key="project.open.time.67" value="2" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.73" value="2" />
-          <entry key="project.open.time.75" value="1" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.open.time.75" value="2" />
+          <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.80" value="1" />
+          <entry key="project.open.time.80" value="2" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.9" value="2" />
           <entry key="project.open.time.93" value="4" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="62" />
+          <entry key="project.opened" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="36" />
-          <entry key="JAVA" value="442" />
+          <entry key="CLASS" value="39" />
+          <entry key="JAVA" value="460" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="22" />
+          <entry key="Properties" value="23" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="56" />
+          <entry key="XML" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16188" />
-          <entry key="PLAIN_TEXT" value="229" />
-          <entry key="Properties" value="175" />
-          <entry key="XML" value="326" />
+          <entry key="JAVA" value="18422" />
+          <entry key="PLAIN_TEXT" value="233" />
+          <entry key="Properties" value="194" />
+          <entry key="XML" value="349" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -124,91 +139,98 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Example.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="127">
+              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/P.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/RedisTestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="32" />
+            <state relative-caret-position="78">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IRedisServices.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="171">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Test.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="197">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/leetcode/MaxSum.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/RedisServicesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="62" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="62" />
+            <state relative-caret-position="135">
+              <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/SelectionSort.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/test/demo1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+            <state relative-caret-position="157">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/SecurityUtil.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_provider/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="75" column="24" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
+            <state relative-caret-position="318">
+              <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/MysqlSqlProviderUtil.java">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_commons/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="275">
+              <caret line="125" column="19" selection-start-line="120" selection-start-column="6" selection-end-line="125" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -219,8 +241,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="JUnit3 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -228,7 +250,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>SecurityUtil</find>
+      <find>spring-boot-starter-redis</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -243,19 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/LogWallet.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetAdvice.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetFund.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetItem.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/PetOrder.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/Wallet.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserAddress.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysUserRole.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRolePermission.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysRole.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/SysPermission.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogApplicationMapper.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogLoginMapper.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/response/LogApplicationVO.java" />
         <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogApplicationProvider.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/response/LogLoginVO.java" />
@@ -289,11 +302,24 @@
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utils/SignTools.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Example.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/P.java" />
-        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Test.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/leetcode/MaxSum.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/BubbleSort.java" />
         <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/ShellSort.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/DemoTest.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/NewtonMethod.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/test/demo1.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_commons/pom.xml" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IRedisServices.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/RedisTestController.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/RedisServicesImpl.java" />
+        <option value="$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/RedisConfig.java" />
       </list>
     </option>
   </component>
@@ -316,26 +342,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="star_pet_house_api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="star_pet_house_provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="org.springframework.boot:spring-boot-starter-data-redis:2.1.5.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
         </path>
       </expand>
       <select />
@@ -502,7 +508,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -564,13 +569,14 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="star_pet_house_commons" type="462c0819:PsiDirectoryNode" />
               <item name="algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -581,7 +587,7 @@
     <property name="SearchEverywhereHistoryKey" value="ApplicationPart&#9;PSI&#9;JAVA://org.apache.catalina.core.ApplicationPart" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606988055641" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607931087009" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SSMP" />
@@ -629,22 +635,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SelectionSort">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.algorithm.sort.BubbleSort" />
-      <module name="star_pet_house_commons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.star_pet_house_commons.algorithm.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utiltest.Example" />
+  <component name="RunManager" selected="Spring Boot.ApiApplication">
+    <configuration name="DemoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utiltest.DemoTest" />
       <module name="star_pet_house_commons" />
       <extension name="coverage">
         <pattern>
@@ -656,12 +649,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.leetcode.MaxSum" />
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.algorithm.sort.InsertionSort" />
       <module name="star_pet_house_commons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.star_pet_house_commons.leetcode.*" />
+          <option name="PATTERN" value="org.star_pet_house_commons.algorithm.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewtonMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.algorithm.NewtonMethod" />
+      <module name="star_pet_house_commons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.star_pet_house_commons.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -682,12 +688,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.utiltest.Test" />
+    <configuration name="demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.star_pet_house_commons.algorithm.test.demo1" />
       <module name="star_pet_house_commons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.star_pet_house_commons.utiltest.*" />
+          <option name="PATTERN" value="org.star_pet_house_commons.algorithm.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -740,19 +746,19 @@
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Spring Boot.ProviderApplication" />
       <item itemvalue="Spring Boot.ApiApplication" />
-      <item itemvalue="Application.Example" />
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.MaxSum" />
-      <item itemvalue="Application.BubbleSort" />
       <item itemvalue="Application.SelectionSort" />
+      <item itemvalue="Application.InsertionSort" />
+      <item itemvalue="Application.DemoTest" />
+      <item itemvalue="Application.NewtonMethod" />
+      <item itemvalue="Application.demo1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo1" />
+        <item itemvalue="Application.NewtonMethod" />
+        <item itemvalue="Application.DemoTest" />
+        <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SelectionSort" />
-        <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.MaxSum" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Example" />
       </list>
     </recent_temporary>
   </component>
@@ -828,7 +834,18 @@
       <workItem from="1606784147983" duration="1581000" />
       <workItem from="1606870313907" duration="2587000" />
       <workItem from="1606956664558" duration="9380000" />
-      <workItem from="1607043306093" duration="544000" />
+      <workItem from="1607043306093" duration="4598000" />
+      <workItem from="1607068627801" duration="2388000" />
+      <workItem from="1607146573789" duration="541000" />
+      <workItem from="1607268071738" duration="515000" />
+      <workItem from="1607302893940" duration="563000" />
+      <workItem from="1607344970573" duration="1141000" />
+      <workItem from="1607389014371" duration="7315000" />
+      <workItem from="1607475653435" duration="514000" />
+      <workItem from="1607561945690" duration="6820000" />
+      <workItem from="1607648538162" duration="1973000" />
+      <workItem from="1607746262687" duration="6248000" />
+      <workItem from="1607907601871" duration="7117000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1579505167289</created>
@@ -914,7 +931,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606710061793</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改内容：sort">
+      <created>1607043906799</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607043906799</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -926,12 +950,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318400000" />
+    <option name="totallyTimeSpent" value="357589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49691358" visible="true" weight="0.18683812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49691358" visible="true" weight="0.26172465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -941,8 +965,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.47135842" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31423897" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6240545" weight="0.34860885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3420622" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6240545" weight="0.4942717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1016,114 +1040,64 @@
     <MESSAGE value="1" />
     <MESSAGE value="修改内容：增加V1.0.0类似版本号比较工具类" />
     <MESSAGE value="修改内容：" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改内容：" />
+    <MESSAGE value="修改内容：sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改内容：sort" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/DemoTest.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/NewtonMethod.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/RedisServicesImpl.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/RedisTestController.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>str.charAt(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str.substring(str.lastIndexOf(&quot; &quot;)+1, str.length()).length()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str.lastIndexOf(&quot; &quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str.substring(str.lastIndexOf(&quot; &quot;)+1, str.length())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogWalletMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogWalletProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="37" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogComplainMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="21" selection-start-line="19" selection-start-column="4" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/LogComplainProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IConfiglogServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/model/response/UserInfoVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="7" lean-forward="true" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/PetStatusEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/GengerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/enums/UserStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/mapper/UserInfoProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="34" column="63" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UploadImageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/TestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/StoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/ConfigLogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -1135,20 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1166,21 +1126,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/leetcode.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/AddressController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1188,29 +1134,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/TestServicesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/AddressServicesImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1299,24 +1226,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm.java" />
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/P.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1334,10 +1247,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.029/xpe-products-vas-backend/WEB-INF/classes/com/cairh/xpe/vas/backend/autotask/OrderCloseAutoTask.class" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.665/xpe-products-vas-backend/WEB-INF/classes/com/cairh/xpe/vas/backend/service/impl/ServiceOrderServiceImpl.class" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.485/xpe-products-vas-backend/WEB-INF/classes/com/cairh/xpe/vas/backend/service/impl/ServiceOrderServiceImpl.class" />
     <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/BubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="62" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/SelectionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="65" selection-start-line="14" selection-start-column="8" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/S.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/utiltest/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/NewtonMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1362,10 +1330,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/sort/SelectionSort.java">
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        <state relative-caret-position="417">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/AddressServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/utils/OOSClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_service/src/main/java/org/star_pet_house_service/services/IRedisServices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/aop/ProviderAsecpt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_api/src/main/java/com/jf/api/controller/RedisTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/impl/RedisServicesImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="125" column="19" selection-start-line="120" selection-start-column="6" selection-end-line="125" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="139" column="20" selection-start-line="139" selection-start-column="20" selection-end-line="139" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_provider/src/main/java/com/jf/provider/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/star_pet_house_commons/src/main/java/org/star_pet_house_commons/algorithm/test/demo1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
